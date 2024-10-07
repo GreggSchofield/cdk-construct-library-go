@@ -8,7 +8,7 @@ func validatePlatformQueue_IsConstructParameters(x interface{}) error {
 	return nil
 }
 
-func validateNewPlatformQueueParameters(scope constructs.Construct, id *string) error {
+func validateNewPlatformQueueParameters(scope constructs.Construct, id *string, props *PlatformQueueProps) error {
 	return nil
 }
 

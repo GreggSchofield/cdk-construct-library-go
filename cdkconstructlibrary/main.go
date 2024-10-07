@@ -21,4 +21,8 @@ func init() {
 			return &j
 		},
 	)
+	_jsii_.RegisterStruct(
+		"cdk-construct-library.PlatformQueueProps",
+		reflect.TypeOf((*PlatformQueueProps)(nil)).Elem(),
+	)
 }

@@ -32,29 +32,29 @@ func (j *jsiiProxy_PlatformQueue) Node() constructs.Node {
 }
 
 
-func NewPlatformQueue(scope constructs.Construct, id *string) PlatformQueue {
+func NewPlatformQueue(scope constructs.Construct, id *string, props *PlatformQueueProps) PlatformQueue {
 	_init_.Initialize()
 
-	if err := validateNewPlatformQueueParameters(scope, id); err != nil {
+	if err := validateNewPlatformQueueParameters(scope, id, props); err != nil {
 		panic(err)
 	}
 	j := jsiiProxy_PlatformQueue{}
 
 	_jsii_.Create(
 		"cdk-construct-library.PlatformQueue",
-		[]interface{}{scope, id},
+		[]interface{}{scope, id, props},
 		&j,
 	)
 
 	return &j
 }
 
-func NewPlatformQueue_Override(p PlatformQueue, scope constructs.Construct, id *string) {
+func NewPlatformQueue_Override(p PlatformQueue, scope constructs.Construct, id *string, props *PlatformQueueProps) {
 	_init_.Initialize()
 
 	_jsii_.Create(
 		"cdk-construct-library.PlatformQueue",
-		[]interface{}{scope, id},
+		[]interface{}{scope, id, props},
 		p,
 	)
 }
