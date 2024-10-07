@@ -8,6 +8,7 @@ import (
 	"github.com/GreggSchofield/cdk-construct-library-go/cdkconstructlibrary/internal"
 )
 
+// Construct that creates an AWS SQS queue with best practices.
 type PlatformQueue interface {
 	constructs.Construct
 	// The tree node.
