@@ -25,4 +25,13 @@ func init() {
 		"cdk-construct-library.PlatformQueueProps",
 		reflect.TypeOf((*PlatformQueueProps)(nil)).Elem(),
 	)
+	_jsii_.RegisterEnum(
+		"cdk-construct-library.SecurityStandard",
+		reflect.TypeOf((*SecurityStandard)(nil)).Elem(),
+		map[string]interface{}{
+			"GDPR": SecurityStandard_GDPR,
+			"PCI_DSS": SecurityStandard_PCI_DSS,
+			"SOC_2": SecurityStandard_SOC_2,
+		},
+	)
 }
